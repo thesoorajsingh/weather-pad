@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { LoadingScreen } from "./LoadingScreen/LoadingScreen";
+import LoadingScreen from "./LoadingScreen/LoadingScreen";
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true);
