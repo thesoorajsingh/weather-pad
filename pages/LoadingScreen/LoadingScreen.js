@@ -1,6 +1,6 @@
 import styles from "./LoadingScreen.module.css";
 
-export const LoadingScreen = () => {
+export default function LoadingScreen() {
 	return (
 		<div className={styles.loadingBody}>
 			<svg className={styles.loadingAnimation} viewBox="0 0 1320 300">
@@ -10,4 +10,4 @@ export const LoadingScreen = () => {
 			</svg>
 		</div>
 	);
-};
+}
