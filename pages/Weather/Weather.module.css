@@ -1,0 +1,14 @@
+.weatherBody {
+height: 100vh;
+background-color: #e3f2fd;
+display:flex;
+}
+
+.weatherCard {
+	width: 25%;
+	background: white;
+	margin: 2.5rem;
+	padding: 1.5rem;
+	height: fit-content;
+	border-radius: 2.5rem;
+}

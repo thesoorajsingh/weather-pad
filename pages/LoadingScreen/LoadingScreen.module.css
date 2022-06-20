@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 .loadingBody {
-	background: #e3f2fd
+	background: #e3f2fd;
 }
 
 .loadingAnimation {
@@ -11,7 +11,7 @@
 }
 .loadingAnimation text {
 	text-transform: uppercase;
-	animation: stroke 4s infinite alternate;
+	animation: stroke 3s infinite alternate;
 	stroke-width: 2;
 	stroke: #365fa0;
 	font-size: 140px;
