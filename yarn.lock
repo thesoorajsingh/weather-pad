@@ -2637,7 +2637,7 @@
     "react-is-mounted-hook" "^1.1.2"
     "sleep-promise" "^9.1.0"
 
-"react-select@^5.0.0":
+"react-select@^5.0.0", "react-select@^5.4.0":
   "integrity" "sha512-CjE9RFLUvChd5SdlfG4vqxZd55AZJRrLrHzkQyTYeHlpOztqcgnyftYAolJ0SGsBev6zAs6qFrjm6KU3eo2hzg=="
   "resolved" "https://registry.npmjs.org/react-select/-/react-select-5.4.0.tgz"
   "version" "5.4.0"
