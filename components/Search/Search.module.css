@@ -1,0 +1,19 @@
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search {
+	width: 25rem;
+  border-radius: 0.5rem;
+  box-shadow: 5.5px 5.5px 0 #000;
+  outline: none;
+}
+
+.search:active {
+  border: none;
+  outline: none;
+}
