@@ -1,14 +1,39 @@
-.weatherBody {
-height: 100vh;
-background-color: #e3f2fd;
-display:flex;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&family=Righteous&display=swap');
+
+.mainContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
 }
 
-.weatherCard {
-	width: 25%;
-	background: white;
-	margin: 2.5rem;
+.weatherContainer {
+	margin-top: 1rem;
 	padding: 1.5rem;
-	height: fit-content;
-	border-radius: 2.5rem;
+	background-color: white;
+	border-radius: 0.5rem;
+	box-shadow: 7px 7px 0 #000;
+}
+
+.shadowTransition {
+	box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.location {
+	font-size: 3.5rem;
+	font-weight: bold;
+	font-family:'Poppins', cursive;
+	text-align: center;
+}
+
+.temperature {
+	color: black;
+	display: flex;
+	align-items: center;
+	font-size: 7rem;
+	font-weight: bold;
+	font-family:'Poppins', cursive;
+	text-align: center;
 }

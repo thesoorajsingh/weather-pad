@@ -10,6 +10,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(187, 211, 206);
+	width: 100vw;
+	height: 100vh;
 }
 
 .footer {
