@@ -29,9 +29,7 @@ export default function Search({ onSearchChange }) {
 		<>
 			<motion.div
 				initial={{ y: 0, duration: 0.2 }}
-				animate={{
-					y: -100,
-				}}
+				animate={window.innerwidth > 768 ? { y: -150 } : { y: -35 }}
 				transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
 				className={styles.searchContainer}
 			>

@@ -10,7 +10,11 @@ const Home = () => {
 		setIsLoading(false);
 	}, 6000);
 
-	return isLoading ? <LoadingScreen /> : <Weather />;
+	return typeof window !== undefined && isLoading ? (
+		<LoadingScreen />
+	) : (
+		<Weather />
+	);
 };
 
 export default Home;

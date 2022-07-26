@@ -17,3 +17,9 @@
   border: none;
   outline: none;
 }
+
+@media screen and (max-width: 768px) {
+  .search {
+    width: 20rem;
+  }
+}
