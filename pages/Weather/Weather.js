@@ -56,7 +56,7 @@ export default function Weather() {
 					y: 0,
 					duration: 0.5,
 				}}
-				animate={window.innerwidth > 768 ? { y: -150 } : { y: -75 }}
+				animate={{ y: -75 }}
 				transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
 			>
 				<Search onSearchChange={handleOnSearchChange} />
