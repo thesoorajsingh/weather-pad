@@ -42,10 +42,8 @@ export default function Weather() {
 		Promise.all([fetchCurrentWeather])
 			.then(async (response) => {
 				const current = await response[0].json();
-				console.log(current);
 				setCurrentWeather(current);
 				setIcon({ src: "http://" + current?.current.condition.icon });
-				console.log(icon);
 			})
 			.catch((err) => console.error(err));
 	};
@@ -72,8 +70,9 @@ export default function Weather() {
 						<Image
 							src={`${icon.src}`}
 							alt="Current Weather condition icon"
-							width="64px"
-							height="64px"
+							width="100px"
+							height="100px"
+							className={styles.icon}
 						/>
 						{currentWeather?.current?.temp_c}°C
 					</div>
