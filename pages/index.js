@@ -4,7 +4,7 @@ import LoadingScreen from "./LoadingScreen/LoadingScreen";
 import Weather from "./Weather/Weather";
 
 const Home = () => {
-	const [isLoading, setIsLoading] = useState(true);
+	const [isLoading, setIsLoading] = useState(false);
 
 	setTimeout(() => {
 		setIsLoading(false);

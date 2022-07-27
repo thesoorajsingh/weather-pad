@@ -2,30 +2,33 @@ import React, { useEffect, useState } from "react";
 import styles from "./Weather.module.css";
 import { motion } from "framer-motion";
 import Search from "../../components/Search/Search.jsx";
+import Image from "next/image";
+import Lottie from "lottie-react";
 
 export default function Weather() {
 	const [currentWeather, setCurrentWeather] = useState({});
 	const [forecastWeather, setForecastWeather] = useState({});
+	const [icon, setIcon] = useState({
+		src: "http://cdn.weatherapi.com/weather/64x64/day/116.png",
+	});
 	const [currentLocation, setCurrentLocation] = useState("Bengaluru, IN");
-	const options = {
-		method: "GET",
-		headers: {
-			"X-RapidAPI-Key": "ec0db162e7msh7ff614a3ef5101cp165d29jsndd41fd484b19",
-			"X-RapidAPI-Host": "community-open-weather-map.p.rapidapi.com",
-		},
-	};
-
 	const handleOnSearchChange = (searchData) => {
-		console.log;
+		const options = {
+			method: "GET",
+			headers: {
+				"X-RapidAPI-Key": "8d7dbf45e5mshb3fe3ea57d6323fp194daejsn8de1575cdec5",
+				"X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
+			},
+		};
 		searchData.label !== undefined
 			? setCurrentLocation(searchData.label)
 			: null;
 		const [lat, lon] = searchData.value.split(" ");
 
 		const fetchCurrentWeather = fetch(
-			`https://community-open-weather-map.p.rapidapi.com/weather?lat=${
+			`https://weatherapi-com.p.rapidapi.com/current.json?q=${
 				lat !== undefined ? lat : "12.9716"
-			}&lon=${lon !== undefined ? lon : "77.5946"}&units=metric`,
+			},${lon !== undefined ? lon : "77.5946"}`,
 			options
 		);
 
@@ -39,7 +42,10 @@ export default function Weather() {
 		Promise.all([fetchCurrentWeather])
 			.then(async (response) => {
 				const current = await response[0].json();
+				console.log(current);
 				setCurrentWeather(current);
+				setIcon({ src: "http://" + current?.current.condition.icon });
+				console.log(icon);
 			})
 			.catch((err) => console.error(err));
 	};
@@ -63,7 +69,13 @@ export default function Weather() {
 				<div id="weatherContainer" className={`${styles.weatherContainer}`}>
 					<div className={styles.location}>{currentLocation}</div>
 					<div className={styles.temperature}>
-						{currentWeather.main?.temp}°C
+						<Image
+							src={`${icon.src}`}
+							alt="Current Weather condition icon"
+							width="64px"
+							height="64px"
+						/>
+						{currentWeather?.current?.temp_c}°C
 					</div>
 				</div>
 			</motion.div>

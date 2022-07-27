@@ -2257,14 +2257,14 @@
   dependencies:
     "js-tokens" "^3.0.0 || ^4.0.0"
 
-"lottie-react@^2.3.0":
-  "integrity" "sha512-zf4XCZ6uttAL+7q/vnnrh0r/C7LTO1hBGvAiOEPgNV4l6y8xUPCKT494aV51lafRt7nMjdVrkCdEGOBbpxSPwA=="
-  "resolved" "https://registry.npmjs.org/lottie-react/-/lottie-react-2.3.0.tgz"
-  "version" "2.3.0"
+"lottie-react@^2.3.1":
+  "integrity" "sha512-8cxd6XZZtECT6LoAhCftRdYrEpHxiouvB5EPiYA+TtCG5LHNYAdMS9IVIHcxKtWnpo7x16QfCLj1XLXZpaN81A=="
+  "resolved" "https://registry.npmjs.org/lottie-react/-/lottie-react-2.3.1.tgz"
+  "version" "2.3.1"
   dependencies:
-    "lottie-web" "^5.8.1"
+    "lottie-web" "^5.9.4"
 
-"lottie-web@^5.8.1":
+"lottie-web@^5.9.4":
   "integrity" "sha512-bSs1ZTPifnBVejO1MnQHdfrKfcn02YTCmgOh2wcAEICqRA0V7GzDh8FnwXY6+EzT+i8XOunaIloo/5xC5YNbsA=="
   "resolved" "https://registry.npmjs.org/lottie-web/-/lottie-web-5.9.4.tgz"
   "version" "5.9.4"
