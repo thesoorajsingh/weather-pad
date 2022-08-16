@@ -44,7 +44,7 @@ export default function Weather() {
 				const current = await response[0].json();
 				console.log(current);
 				setCurrentWeather(current);
-				setIcon({ src: "https://" + current?.current.condition.icon });
+				setIcon({ src: "https:" + current?.current.condition.icon });
 			})
 			.catch((err) => console.error(err));
 	};
