@@ -42,3 +42,9 @@
 	font-family:'Poppins', cursive;
 	text-align: center;
 }
+
+@media (max-width: 768px) {
+	.weatherContainer {
+		width: 90vw;
+	}
+}
